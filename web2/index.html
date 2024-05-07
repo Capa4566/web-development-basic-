@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+a:link {
+    color:whitesmoke;
+    background-color:transparent;
+    text-decoration:none;
+}
+a:visited {
+    color:black;
+    background-color:transparent;
+    text-decoration:none;
+}
+a:hover {
+    color:purple;
+    background-color:transparent;
+    text-decoration:underline;
+}
+a:active {
+    color:violet;
+    background-color:transparent;
+    text-decoration:underline;
+}
+#profile {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 650px;
+    top: 300px;
+    border-radius: 50%;
+    border: 10px solid slateblue;
+    padding: 4px;
+    z-index: 0;
+}
+
+#first,
+#second,
+#third {
+  width: 200px;
+  height: 260px;
+}
+
+.linkers {
+    display:flex;
+    position:absolute; 
+    flex-direction: column;
+    top: 310px;
+    width:90px; 
+    height:90px; 
+    left: 960px;
+    gap: 20px;
+}
+
+#linkers1 {
+    width:60px; 
+    height:60px; 
+    left: 960px;
+    border-radius:50%; 
+    border:4px solid slateblue; 
+    z-index: 1;
+}
+
+    </style>
+</head>
+<body>
+    <h1 style="font-size:300%; word-spacing:5px;">
+        <br>
+        A b o u t &nbsp M e
+    </h1>
+    <h2>
+        <br>
+        <b>Tan Xiao Ru</b>
+    </h2>
+    <div class="linkers">
+        <a href="https://aboutbitnoc.netlify.app/" title="Ang Zi Xiang: A friend who is enthusiastic" target="_blank">
+            <img id="linkers1" src="friend1.jpg"/>
+        </a>
+        <a href="http://www.hi.com:8001/" title="Yap Jin Wei: Classmate, don't really know much about him" target="_blank">
+            <img id="linkers1" src="friend2.jpg"/>
+        </a>
+        <a href="https://www.instagram.com/" title="Illustration purpose only" target="_blank">
+            <img id="linkers1" src="friend pic.jpg">
+        </a>
+    </div>
+   
+
+    <img id="profile" src="Profile.jpg"/>
+    
+    <p>
+    A second-year <b>Computer Science student</b><br>
+    studying at Beijing Institute of Technology.<br><br>
+    Current semester subjects:
+    <ul>
+	  <i><li>Physics A(II)</li>
+	    <li>Statistics and Probability</li>
+	    <li>Discrete Mathematics</li>
+	    <li>Numerical Analysis</li>
+	    <li>Data Structures and Algorithm Analysis</li>
+	    <li>Web Development Basics</li>
+	    <li>Programming Design</li></i>
+    </ul>
+    <br>
+    <hr>
+    <h2>My Recommendations</h2>
+    <ol class="test">
+	    <li>Reply 1988<br><br>
+		<a href="https://www.imdb.com/title/tt5182866/" title="Reply 1988 on IMDB" target="_blank">
+		<img id="first" src="Reply 1988.jpg" alt="Reply 1988"/>
+		</a>
+	    </li>
+	    <li>The Journey<br><br>
+		<a href="https://movie.douban.com/subject/25817712/" title="The Journey on Douban" target="_blank">
+		<img id="second" src="The Journey.jpg" alt="The Journey"/>
+		</a>
+	    </li>
+	    <li>Shaolin<br><br>
+		<a href="https://www.imdb.com/title/tt1533749/" title="Shaolin on IMDB" target="_blank">
+		<img id="third" src="Shaolin.jpg" alt="Shaolin"/>
+		</a>
+	    </li>
+    </ol>
+    <br>
+    <hr>
+    <h3 style="text-align:center;">Do you like my page? 
+	    <a href="http://192.168.1.108:8082/Thankyou.html">Yes</a>&#128151
+	    or
+	    <a href="http://192.168.1.108:8083/Oops.html">Not really</a>&#128517
+    </h3>
+    </p>
+</body>
+</html>

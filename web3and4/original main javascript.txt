@@ -1,0 +1,17 @@
+function check() {
+    var user = test.username.value;
+    if (user.length < 6) {
+        alert("Username must contain at least 6 characters.");
+        test.username.value = "";
+        document.getElementById("Username").focus();
+    }
+    else {
+        window.location.href = "http://192.168.1.108:8082/index1.html";
+    }
+}
+
+setInterval(myTimer, 1000);
+function myTimer() {
+    const d = new Date();
+    document.getElementById("time").innerHTML = d.toLocaleTimeString();
+}

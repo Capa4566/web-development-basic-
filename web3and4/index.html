@@ -1,0 +1,49 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Lover Not?</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+
+    <form name="test" method="get" action="./online_test.asp">
+    <h1>Cat Lover Not</h1>
+    <p> <script>
+        const d = new Date();
+        var hour = d.getHours();
+        if (hour < 12) {
+            document.write("Good Morning! ");
+        }
+        if ((hour >= 12) && (hour < 18)) {
+            document.write("Good Afternoon! ");
+        }
+        if (hour >= 18) {
+            document.write("Good Evening! ");
+        }
+        </script>
+        Are you a cat person ? <br>
+        This test consists of 3 sections with the first two sections to test your knowledge about the cats followed by a simple Q&A.<br>
+        Cat Lover Not tries to tell you more about cats while evaluating you level of affection towards the cats.<br>
+    </p>
+
+    <label>Username:</label>
+    <input type="text" name="username" id="Username" size="30"/>
+    <br><br>
+    <a href="online_test.asp">
+    <button type="button" name="starttest">Let's Get Started!</button>
+    </a>
+
+    <p id="time"></p>
+
+    <script>
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let month = months[d.getMonth()];
+        document.write(d.getDate()+' '+month+', '+d.getFullYear());
+    </script>
+    </form>
+</body>
+</html>

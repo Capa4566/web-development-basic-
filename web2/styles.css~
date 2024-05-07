@@ -1,0 +1,41 @@
+body {
+   font-family:'Times New Roman', Times, serif;
+}
+hr {
+   width:80%;
+   color:grey;
+}
+h1,h3 {
+    background-color:slateblue;
+    color:whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid slateblue;
+    padding: 25px;
+    margin: 50px;
+}
+h2 {
+   margin-top: 30px;
+   margin-left: 160px;
+   margin-bottom: 30px;
+}
+p {
+    font-size:medium;
+    color:rgb(65, 63, 63);
+    margin-left: 160px;
+    line-height:1.5;
+    z-index: 1
+}
+ul {
+    margin-left:230px;
+    line-height:1.15;
+}
+.test {
+    display: flex;
+    margin-left:160px;
+    text-align:center;
+    letter-spacing:1px;
+    gap: 125px;
+    width:200px;
+    height:260px;
+}
+
